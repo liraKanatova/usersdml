@@ -1,0 +1,13 @@
+select * from users;
+select * from users where id in (1,2,3,5,14);
+select * from users where email in ('cmales2r@bloomberg.com' , 'rhowgego0@photobucket.com' , 'equare2o@uiuc.edu');
+select * from users where id in (1,2,3,7,9) and email in ('rhowgego0@photobucket.com','gfairpo1@gmpg.org','sgilluley2@hhs.gov','agosnall6@mac.com','bmackieson8@booking.com') and salary> '$3000';
+select * from users where id between 3 and 10 and salary between '$2000' and '$3200';
+alter table users rename column id to useraId;
+alter table users rename column email to userEmail;
+alter table users rename column salary to userSalary;
+select concat(3) as res FROM users;
+SELECT concat(usersalary,' ',age) as res FROM users;
+select concat(usersalary,' ',age,'!') as res from users;
+select concat(usersalary,' ',age,'-') as res from users;
+select concat(substr(useremail,0,6),'...') FROM users;
